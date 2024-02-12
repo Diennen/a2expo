@@ -1,0 +1,126 @@
+@import "_variables";
+
+.services {
+	padding: $padding-mobile;
+	background: $background-gray;
+
+	.services-container {
+		.services-elements {
+			.services-cards {
+				margin-top: 60px;
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+
+				.services-card {
+					background: $black;
+					color: $orange;
+					padding: 30px;
+					border-radius: 20px;
+
+					.services-card-img {
+						display: flex;
+						justify-content: center;
+					}
+					.services-card-texts {
+						margin-top: 20px;
+
+						.services-card-title {
+							text-align: center;
+							font-weight: 700;
+							font-size: 25px;
+							line-height: 30px;
+						}
+
+						.services-card-subtitle {
+							line-height: 24px;
+							margin-top: 20px;
+							font-size: 20px;
+						}
+					}
+				}
+
+				.services-card-attention {
+					background: $orange;
+					color: $black;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.services {
+		.services-container {
+			.services-elements {
+				.services-title {
+					font-size: 50px;
+				}
+
+				.services-cards {
+					margin-top: 90px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.services {
+		.services-container {
+			.services-elements {
+				.services-cards {
+					gap: 30px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.services {
+		padding: $padding-tablet-and-pc;
+
+		.services-container {
+			.services-elements {
+				.services-cards {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.services {
+		.services-container {
+			.services-elements {
+				.services-cards {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+				}
+			}
+		}
+	}
+}
+
+// .services {
+// 	.services-container {
+// 		.services-elements {
+// 			.services-title {
+// 			}
+
+// 			.services-cards {
+// 				.services-card {
+// 					.services-card-img {}
+
+// 					.service-card-texts {
+// 						.services-card-title {}
+// 						.services-card-subtitle {}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

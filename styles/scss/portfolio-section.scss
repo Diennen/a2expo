@@ -1,0 +1,158 @@
+@import "_variables";
+
+.portfolio {
+	padding: $padding-mobile;
+	background: $white;
+
+	.portfolio-container {
+		.portfolio-elements {
+			.portfolio-top {
+				margin-bottom: 60px;
+
+				.portfolio-texts {
+					.portfolio-subtitle {
+						line-height: 30px;
+					}
+				}
+
+				.portfolio-choise {
+					display: flex;
+					flex-direction: column;
+					gap: 20px;
+					margin-top: 60px;
+					font-size: 30px;
+
+					.portfolio-choise-element {
+						background: $black;
+						color: $orange;
+						transition: $animation;
+						padding: 15px 0;
+						width: 100%;
+						border-radius: 999px;
+
+						&:hover {
+							background: $orange;
+							color: $black;
+						}
+					}
+
+					.portfolio-choise-element._active {
+						background: $orange;
+						color: $black;
+						pointer-events: none;
+					}
+				}
+			}
+
+			.portfolio-gallery {
+				grid-template-columns: 1fr;
+				gap: 20px;
+				visibility: hidden;
+				opacity: 0;
+				width: 0;
+				height: 0;
+				transition: $animation;
+
+				div {
+					height: 200px;
+					overflow: hidden;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+
+			.portfolio-gallery._active {
+				visibility: visible;
+				height: auto;
+				width: auto;
+				display: grid;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.portfolio {
+		.portfolio-container {
+			.portfolio-elements {
+				.portfolio-top {
+					.portfolio-choise {
+						gap: 30px;
+					}
+				}
+
+				.portfolio-gallery {
+					gap: 30px;
+
+					div {
+						height: 300px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.portfolio {
+		.portfolio-container {
+			.portfolio-elements {
+				.portfolio-top {
+					margin-bottom: 30px;
+
+					.portfolio-choise {
+						flex-direction: row;
+						justify-content: center;
+						gap: 25px;
+
+						.portfolio-choise-element {
+							padding: 15px 80px;
+							width: auto;
+						}
+					}
+				}
+
+				.portfolio-gallery {
+					grid-template-columns: repeat(2, 1fr);
+
+					div {
+						height: 200px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.portfolio {
+		padding: $padding-tablet-and-pc;
+
+		.portfolio-container {
+			.portfolio-elements {
+				.portfolio-gallery {
+					grid-template-columns: repeat(3, 1fr);
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.portfolio {
+		.portfolio-container {
+			.portfolio-elements {
+				.portfolio-gallery {
+					div {
+						height: 250px;
+					}
+				}
+			}
+		}
+	}
+}

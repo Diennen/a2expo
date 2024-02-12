@@ -1,0 +1,11 @@
+.header-link-1,
+.header-link-2,
+.burger-link-1,
+.burger-link-2,
+.burger-links-line {
+  display: none;
+}
+
+.burger-links {
+  gap: 10px !important;
+}

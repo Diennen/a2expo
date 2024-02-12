@@ -1,0 +1,123 @@
+.section-title-container {
+  text-align: center;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  color: #111111;
+  font-size: 40px;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .section-title {
+    font-size: 50px;
+  }
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -26px;
+  display: block;
+  width: 80%;
+  height: 10px;
+  background: #ff8b17;
+  border-radius: 999px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  margin-top: 60px;
+  font-size: 25px;
+  line-height: 30px;
+  color: #111111;
+}
+
+.intro {
+  padding: 60px 0;
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.8) 0%, rgba(255, 139, 23, 0.8) 40%), url("../../img/jpg/stands/a2expo-stand-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.intro .intro-container .intro-elements .intro-texts {
+  color: #ffffff;
+}
+.intro .intro-container .intro-elements .intro-texts .intro-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+}
+.intro .intro-container .intro-elements .intro-texts .intro-subtitle {
+  margin-top: 30px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.intro .intro-container .intro-elements .intro-buttons {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.intro .intro-container .intro-elements .intro-buttons .intro-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+  background: #ff8b17;
+  color: #111111;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  font-size: 25px;
+}
+.intro .intro-container .intro-elements .intro-buttons .intro-button:hover {
+  background: #ff9831;
+}
+
+@media (min-width: 576px) {
+  .intro .intro-container .intro-elements .intro-texts .intro-title {
+    font-size: 50px;
+    line-height: 61px;
+  }
+  .intro .intro-container .intro-elements .intro-texts .intro-subtitle {
+    font-size: 25px;
+  }
+  .intro .intro-container .intro-elements .intro-buttons {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+  .intro .intro-container .intro-elements .intro-buttons .intro-button {
+    padding: 20px 25px;
+  }
+}
+@media (min-width: 768px) {
+  .intro .intro-container .intro-elements .intro-texts .intro-title {
+    font-size: 60px;
+    line-height: 73px;
+  }
+}
+@media (min-width: 992px) {
+  .intro {
+    padding: 187px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro .intro-container .intro-elements .intro-texts .intro-title {
+    font-size: 60px;
+    width: 739px;
+    text-align: center;
+  }
+  .intro .intro-container .intro-elements .intro-texts .intro-subtitle {
+    margin-top: 20px;
+    text-align: center;
+    width: 700px;
+  }
+}

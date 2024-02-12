@@ -1,0 +1,96 @@
+.section-title-container {
+  text-align: center;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  color: #111111;
+  font-size: 40px;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .section-title {
+    font-size: 50px;
+  }
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -26px;
+  display: block;
+  width: 80%;
+  height: 10px;
+  background: #ff8b17;
+  border-radius: 999px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  margin-top: 60px;
+  font-size: 25px;
+  line-height: 30px;
+  color: #111111;
+}
+
+.about-us {
+  padding: 60px 0;
+  background: #ffffff;
+  color: #111111;
+}
+.about-us .about-us-container .about-us-elements .about-us-texts .about-us-subtitle p:last-child {
+  margin-top: 40px;
+}
+.about-us .about-us-container .about-us-elements .about-us-img-wrapper {
+  margin-top: 30px;
+  height: 512px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.about-us .about-us-container .about-us-elements .about-us-img-wrapper img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  transform: scale(2);
+  -o-object-position: 0 0;
+     object-position: 0 0;
+  transition: ease;
+}
+
+@media (min-width: 576px) {
+  .about-us .about-us-container .about-us-elements .about-us-texts .about-us-title {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .about-us {
+    padding: 90px 0;
+  }
+  .about-us .about-us-container .about-us-elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .about-us .about-us-container .about-us-elements .about-us-texts .about-us-title-container {
+    text-align: start;
+  }
+  .about-us .about-us-container .about-us-elements .about-us-texts .about-us-subtitle {
+    width: 456px;
+  }
+  .about-us .about-us-container .about-us-elements .about-us-img-wrapper {
+    min-width: 445px;
+    max-width: 445px;
+    height: 586px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .about-us .about-us-container .about-us-elements .about-us-texts .about-us-subtitle {
+    width: 540px;
+  }
+}

@@ -1,0 +1,140 @@
+@import "_variables";
+
+.intro {
+	padding: $padding-mobile;
+	background: $main-gradient, url("../../img/jpg/stands/a2expo-stand-6.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	.intro-container {
+		.intro-elements {
+			.intro-texts {
+				color: $white;
+				.intro-title {
+					font-weight: 700;
+					font-size: 40px;
+					line-height: 49px;
+					text-align: center;
+				}
+				.intro-subtitle {
+					margin-top: 30px;
+					line-height: 30px;
+					font-size: 20px;
+				}
+			}
+
+			.intro-buttons {
+				margin-top: 40px;
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+
+				.intro-button {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 20px 0;
+					width: 100%;
+					background: $orange;
+					color: $black;
+					transition: $animation;
+					border-radius: 10px;
+					font-size: 25px;
+
+					&:hover {
+						background: lighten($orange, 5%);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.intro {
+		.intro-container {
+			.intro-elements {
+				.intro-texts {
+					.intro-title {
+						font-size: 50px;
+						line-height: 61px;
+					}
+					.intro-subtitle {
+						font-size: 25px;
+					}
+				}
+
+				.intro-buttons {
+					justify-content: center;
+					flex-direction: row;
+					align-items: center;
+					gap: 30px;
+
+					.intro-button {
+						padding: 20px 25px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.intro {
+		.intro-container {
+			.intro-elements {
+				.intro-texts {
+					.intro-title {
+						font-size: 60px;
+						line-height: 73px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.intro {
+		padding: 187px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.intro-container {
+			.intro-elements {
+				.intro-texts {
+					.intro-title {
+						font-size: 60px;
+						width: 739px;
+						text-align: center;
+					}
+
+					.intro-subtitle {
+						margin-top: 20px;
+						text-align: center;
+						width: 700px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// .intro {
+// 	.intro-container {
+// 		.intro-elements {
+// 			.intro-texts {
+// 				.intro-title {
+// 				}
+// 				.intro-subtitle {
+// 				}
+// 			}
+
+// 			.intro-buttons {
+// 				.intro-button {
+// 				}
+// 			}
+// 		}
+// 	}
+// }
