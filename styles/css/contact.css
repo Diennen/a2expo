@@ -1,0 +1,74 @@
+.section-title-container {
+  text-align: center;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  color: #111111;
+  font-size: 40px;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .section-title {
+    font-size: 50px;
+  }
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -26px;
+  display: block;
+  width: 80%;
+  height: 10px;
+  background: #ff8b17;
+  border-radius: 999px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  margin-top: 60px;
+  font-size: 25px;
+  line-height: 30px;
+  color: #111111;
+}
+
+.contact {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .contact {
+    display: initial;
+    background: #e2e2e2;
+    padding: 10px 0;
+  }
+  .contact .contact-container .contact-elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact .contact-container .contact-elements .contact-element a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact .contact-container .contact-elements .contact-element a p {
+    color: #111111;
+    font-size: 15px;
+  }
+  .contact .contact-container .contact-elements .contact-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .contact .contact-container .contact-elements .contact-info {
+    gap: 30px;
+  }
+  .contact .contact-container .contact-elements .contact-social {
+    gap: 20px;
+  }
+}
