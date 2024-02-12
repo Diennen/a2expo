@@ -415,7 +415,7 @@ function changeLanguage(event) {
 // Перезагрузка страницы, если пользователь выбрал язык
 function reloadPageIFClick(event) {
 	if (event) {
-		// location.reload();
+		location.reload();
 	}
 }
 
